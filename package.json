@@ -1,0 +1,24 @@
+{
+  "name": "react-workspaces",
+  "version": "0.1.0",
+  "author": "lidengkai <lidengkai9487@163.com>",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "web": "npm start -w project-web",
+    "h5": "npm start -w project-h5",
+    "dev": "npm run dev -ws --if-present",
+    "test": "npm run test -ws --if-present",
+    "prod": "npm run prod -ws --if-present"
+  },
+  "main": "",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "engines": {
+    "node": ">= 15.0.0",
+    "npm": ">= 7.0.0"
+  }
+}

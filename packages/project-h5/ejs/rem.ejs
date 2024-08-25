@@ -1,0 +1,18 @@
+<script>
+  !(function (window, rate) {
+    "use strict";
+    var document = window.document;
+    var html = document.getElementsByTagName("html")[0];
+    function reset() {
+      var innerWidth = window.innerWidth;
+      var innerHeight = window.innerHeight;
+      var width = innerWidth < innerHeight ? innerWidth : innerHeight * 0.75;
+      var size = width / rate;
+      html.style.cssText += "font-size: " + size + "px !important;"
+        + "width: " + width + "px !important;"
+        + "margin: 0 auto !important;";
+    }
+    reset();
+    window.addEventListener("resize", reset, false);
+  })(window, 7.5);
+</script>
