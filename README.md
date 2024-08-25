@@ -6,7 +6,7 @@ yarn install
 
 **本地调试**
 
-npm run watch:(web)
+npm run (web|h5)
 
 **打包环境**
 
